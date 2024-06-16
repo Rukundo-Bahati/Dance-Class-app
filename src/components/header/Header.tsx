@@ -3,7 +3,7 @@ import { BsPlay } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="relative p-6 h-88 bg-cover bg-center bg-[url('src/assets/dance-bg.jpg')]">
+    <div className="relative p-6 h-88 bg-cover bg-center bg-[url('src/assets/d2.jpg')]">
       <div className="absolute inset-0 bg-violet-950 bg-opacity-80"></div>
       <div className="relative z-10 p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
