@@ -10,7 +10,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="bg-gray-800 text-white">
+    <div className="bg-gray-800 text-white border  border-blue-800 shadow-md shadow-violet-600">
       <div className="flex items-center justify-between px-6 py-4">
         <h1 className="text-2xl font-bold">Spark</h1>
         <div className="hidden md:flex space-x-6">
@@ -32,7 +32,7 @@ const Nav = () => {
         </div>
         <div className="hidden md:flex items-center space-x-4">
           <BsSearch className="text-xl cursor-pointer hover:text-gray-400" />
-          <button className="px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded">
+          <button className="px-4 py-2 bg-indigo-700 hover:bg-blue-700 text-white font-semibold rounded">
             REGISTER NOW
           </button>
         </div>
@@ -55,7 +55,7 @@ const Nav = () => {
             <li className="hover:text-gray-400 cursor-pointer">PAGES</li>
             <li className="hover:text-gray-400 cursor-pointer">CONTACT US</li>
             <BsSearch className="text-xl cursor-pointer hover:text-gray-400" />
-            <button className="px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded mt-4">
+            <button className="px-4 py-2 bg-indigo-900 hover:bg-blue-700 text-white font-semibold rounded mt-4">
               REGISTER NOW
             </button>
           </ul>

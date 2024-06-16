@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: poppins, sans-serif;
+}
+
+/* Define animations for the planets */
+/* Define animations for the planets */
