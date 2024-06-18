@@ -59,7 +59,7 @@ const Style = () => {
             </button>
           </div>
         </div>
-        <button className="px-4 py-2 bg-transparent border hover:bg-blue-700 text-white font-semibold rounded mt-4">
+        <button className="px-4 py-2 bg-transparent border hover:bg-blue-700 text-white font-semibold rounded m-4 w-40">
           View All classes
         </button>
       </div>
