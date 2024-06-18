@@ -6,6 +6,8 @@ import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import Style from "./components/Style";
 import Testimonials from "./components/testimonial/Testimonials";
+import Instructors from "./components/teachers/Instructors";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +42,8 @@ const App = () => {
           <Services />
           <Style />
           <Testimonials />
+          <Instructors />
+          <Contact />
         </>
       )}
     </div>
