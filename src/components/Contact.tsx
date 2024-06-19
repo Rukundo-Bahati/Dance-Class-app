@@ -4,7 +4,7 @@ const Contact = () => {
       <div className="flex flex-col lg:flex-row items-center justify-evenly bg-slate-800 p-3">
         <img
           className="mb-4 lg:mb-0 lg:mr-6 rounded-md my-6"
-          src="src/assets/d4.jpg"
+          src="src/assets/d5.jpg"
           alt=""
           style={{ width: "400px", height: "auto" }}
         />

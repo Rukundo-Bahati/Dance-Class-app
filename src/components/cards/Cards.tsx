@@ -1,7 +1,7 @@
 import Card from "./Card";
-import d1 from "../../assets/d1.jpg";
-import d2 from "../../assets/d3.jpg";
-import d3 from "../../assets/dance-bg.jpg";
+import d1 from "../../assets/d1.webp";
+import d2 from "../../assets/d3.webp";
+import d3 from "../../assets/dance-bg.webp";
 
 const Cards = () => {
   return (

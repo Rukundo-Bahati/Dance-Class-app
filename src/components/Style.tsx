@@ -25,7 +25,7 @@ const Style = () => {
         </div>
         <div>
           <img
-            src="src/assets/d3.jpg"
+            src="src/assets/d3.webp"
             alt="Dance"
             className="w-full h-auto rounded-lg shadow-lg opacity-75 my-3"
           />
@@ -35,7 +35,7 @@ const Style = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-indigo-900">
         <div>
           <img
-            src="src/assets/d1.jpg"
+            src="src/assets/d1.webp"
             alt="Dance"
             className="w-full h-auto rounded-lg shadow-lg opacity-75 my-3 mx-3"
           />

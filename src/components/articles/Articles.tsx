@@ -9,15 +9,15 @@ const Articles = () => {
       </h1>
       <div className="flex flex-wrap justify-evenly items-center p-4">
         <Article
-          img="src/assets/dance-bg.jpg"
+          img="src/assets/dance-bg.webp"
           header="10 Tips For Taking Online Classic Dance Classes"
         />
         <Article
-          img="src/assets/dance-bg.jpg"
+          img="src/assets/p4.webp"
           header="10 Tips For Taking Online Classic Dance Classes"
         />
         <Article
-          img="src/assets/dance-bg.jpg"
+          img="src/assets/p3.webp"
           header="10 Tips For Taking Online Classic Dance Classes"
         />
       </div>
