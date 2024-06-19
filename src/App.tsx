@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Community from "./components/Community";
 import Services from "./components/services/Services";
 import Cards from "./components/cards/Cards";
@@ -8,6 +8,8 @@ import Style from "./components/Style";
 import Testimonials from "./components/testimonial/Testimonials";
 import Instructors from "./components/teachers/Instructors";
 import Contact from "./components/Contact";
+import Articles from "./components/articles/Articles";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,10 +19,10 @@ const App = () => {
     setTimeout(() => {
       setIsLoading(false);
     }, 2000); // Adjust the delay as needed
-  }, []);
+  }, [isLoading]);
 
   return (
-    <div>
+    <div className="bg-slate-950">
       {isLoading ? (
         <div className="flex items-center justify-center min-h-screen">
           <div role="status" className="max-w-sm animate-pulse">
@@ -44,6 +46,8 @@ const App = () => {
           <Testimonials />
           <Instructors />
           <Contact />
+          <Articles />
+          <Footer />
         </>
       )}
     </div>

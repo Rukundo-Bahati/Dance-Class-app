@@ -1,7 +1,7 @@
 const Instructor = () => {
   return (
     <div>
-      <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
+      <div className="grid border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
         <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-l-lg md:border-r dark:bg-slate-800 dark:border-gray-700">
           <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -42,7 +42,7 @@ const Instructor = () => {
           </blockquote>
           <figcaption className="flex items-center justify-center">
             <img
-                className="rounded-full w-14 h-14"
+              className="rounded-full w-14 h-14"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
               alt="Roberta Casas profile picture"
             />
@@ -68,7 +68,7 @@ const Instructor = () => {
           </blockquote>
           <figcaption className="flex items-center justify-center">
             <img
-             className="rounded-full w-14 h-14"
+              className="rounded-full w-14 h-14"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
               alt="Jese Leos profile picture"
             />
@@ -95,7 +95,7 @@ const Instructor = () => {
           </blockquote>
           <figcaption className="flex items-center justify-center">
             <img
-          className="rounded-full w-14 h-14"
+              className="rounded-full w-14 h-14"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
               alt="Joseph McFall profile picture"
             />

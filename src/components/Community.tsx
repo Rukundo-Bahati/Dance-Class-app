@@ -1,7 +1,7 @@
 const Community = () => {
   return (
     <div className="bg-slate-950 text-white">
-      <div className="flex flex-col lg:flex-row items-center justify-between lg:my-8 bg-slate-800 p-3">
+      <div className="flex flex-col lg:flex-row items-center justify-between bg-violet-900 p-3">
         <img
           className="mb-4 lg:mb-0 lg:mr-6 rounded-md my-6"
           src="src/assets/d4.jpg"

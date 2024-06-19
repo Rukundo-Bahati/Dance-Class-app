@@ -3,7 +3,7 @@ import { BsPlay } from "react-icons/bs";
 const Style = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-indigo-800">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-indigo-950 border-b-4 border-orange-700">
         <div className="flex flex-col justify-center items-center m-4">
           <p className="italic text-blue-400">Find the one for you</p>
           <h2 className="text-3xl font-bold text-gray-100 mb-6 text-center">
@@ -32,7 +32,7 @@ const Style = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-indigo-800">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-indigo-900">
         <div>
           <img
             src="src/assets/d1.jpg"
