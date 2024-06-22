@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Community from "./components/Community";
 import Services from "./components/services/Services";
@@ -10,6 +11,9 @@ import Instructors from "./components/teachers/Instructors";
 import Contact from "./components/Contact";
 import Articles from "./components/articles/Articles";
 import Footer from "./components/Footer";
+import About from "./pages/about/About";
+import Class from "./pages/classes/Class";
+import Blog from "./pages/blog/Blog";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,19 +40,28 @@ const App = () => {
           </div>
         </div>
       ) : (
-        <>
-          <Nav />
-          <Header />
-          <Cards />
-          <Community />
-          <Services />
-          <Style />
-          <Testimonials />
-          <Instructors />
-          <Contact />
-          <Articles />
-          <Footer />
-        </>
+        <Router>
+            <Nav />
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Header />
+                <Cards />
+                <Community />
+                <Services />
+                <Style />
+                <Testimonials />
+                <Instructors />
+                <Contact />
+                <Articles />
+              </>
+            } />
+            <Route path="/about" element={<About />} />
+            <Route path="/class" element={<Class />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+            <Footer />
+        </Router>
       )}
     </div>
   );

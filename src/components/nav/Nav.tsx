@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,24 +11,29 @@ const Nav = () => {
   };
 
   return (
-    <div className="bg-gray-800 text-white border  border-blue-800 shadow-md shadow-violet-600">
+    <div className="bg-gray-800 text-white border  border-blue-800 fixed top-0 w-screen z-50">
       <div className="flex items-center justify-between px-6 py-4">
-        <h1 className="text-2xl font-bold">Spark</h1>
+        <h2 className="bg-gradient-to-r text-center from-blue-500 to-purple-500 text-transparent bg-clip-text font-extrabold m-2">
+          SPARK
+        </h2>
         <div className="hidden md:flex space-x-6">
           <li className="hover:text-purple-400 cursor-pointer list-none duration-200">
-            HOME
+            <Link to="/">HOME</Link>
           </li>
           <li className="hover:text-purple-400 cursor-pointer list-none duration-200">
-            ABOUT
+            <Link to="/about">ABOUT</Link>
           </li>
           <li className="hover:text-purple-400 cursor-pointer list-none duration-200">
-            CLASSES
+            <Link to="/class">CLASSES</Link>
           </li>
           <li className="hover:text-purple-500 cursor-pointer list-none duration-200">
             PAGES
           </li>
           <li className="hover:text-purple-500 cursor-pointer list-none duration-200">
-            CONTACT US
+            <Link to="/blog">BLOG</Link>
+          </li>
+          <li className="hover:text-purple-500 cursor-pointer list-none duration-200">
+            CONTACT
           </li>
         </div>
         <div className="hidden md:flex items-center space-x-4">
