@@ -1,8 +1,8 @@
-import { BsArrowBarRight } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import Types from "./Types";
 import Type2 from "./Type2";
 import Type3 from "./Type3";
+import { FaArrowRight } from "react-icons/fa";
 
 const Class = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const Class = () => {
             >
               Home
             </h3>
-            <BsArrowBarRight className="text-white" />
+            <FaArrowRight className="text-white" />
             <h3 className="text-white">Classes</h3>
           </div>
         </div>

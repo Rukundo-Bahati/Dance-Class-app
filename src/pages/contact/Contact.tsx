@@ -1,4 +1,4 @@
-import { BsArrowBarRight } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Address from "./Address";
 import GetInTouch from "./GetInTouch";
@@ -17,7 +17,7 @@ const Contact = () => {
             >
               Home
             </h3>
-            <BsArrowBarRight className="text-white" />
+            <FaArrowRight className="text-white" />
             <h3 className="text-white">Contact</h3>
           </div>
         </div>

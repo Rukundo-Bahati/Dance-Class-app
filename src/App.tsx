@@ -14,6 +14,7 @@ import About from "./pages/about/About";
 import Class from "./pages/classes/Class";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
+import Shop from "./pages/shop/Shop";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -60,6 +61,7 @@ const App = () => {
             <Route path="/class" element={<Class />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/shop" element={<Shop />} />
           </Routes>
             <Footer />
         </Router>

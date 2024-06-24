@@ -1,4 +1,4 @@
-import { BsArrowBarRight } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Category from "./Category";
 import Recents from "./Recents";
@@ -20,7 +20,7 @@ const Blog = () => {
             >
               Home
             </h3>
-            <BsArrowBarRight className="text-white" />
+            <FaArrowRight className="text-white" />
             <h3 className="text-white">Blog</h3>
           </div>
         </div>
