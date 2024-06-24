@@ -13,7 +13,8 @@ import Footer from "./components/Footer";
 import About from "./pages/about/About";
 import Class from "./pages/classes/Class";
 import Blog from "./pages/blog/Blog";
-import Contact from "./pages/contact/Contact";
+import Contacts from "./pages/contact/Contact";
+import Contact from './components/Contact'
 import Shop from "./pages/shop/Shop";
 
 const App = () => {
@@ -60,7 +61,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/class" element={<Class />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contacts />} />
             <Route path="/shop" element={<Shop />} />
           </Routes>
             <Footer />
