@@ -8,12 +8,12 @@ import Nav from "./components/nav/Nav";
 import Style from "./components/Style";
 import Testimonials from "./components/testimonial/Testimonials";
 import Instructors from "./components/teachers/Instructors";
-import Contact from "./components/Contact";
 import Articles from "./components/articles/Articles";
 import Footer from "./components/Footer";
 import About from "./pages/about/About";
 import Class from "./pages/classes/Class";
 import Blog from "./pages/blog/Blog";
+import Contact from "./pages/contact/Contact";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -59,6 +59,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/class" element={<Class />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
             <Footer />
         </Router>
