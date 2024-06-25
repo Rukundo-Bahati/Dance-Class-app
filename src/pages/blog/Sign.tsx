@@ -15,7 +15,7 @@ const Sign = () => {
           name=""
           id=""
           placeholder="Enter Your Email"
-          className="border border-slate-600 bg-slate-600 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-white hover:bg-transparent duration-100"
+          className="border border-slate-600 bg-slate-600 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-white hover:bg-transparent duration-300"
         />
         <a
           href="#"
