@@ -17,6 +17,7 @@ import Contacts from "./pages/contact/Contact";
 import Contact from './components/Contact'
 import Shop from "./pages/shop/Shop";
 import Events from "./pages/events/Event";
+import Pricing from "./pages/pricing/Pricing";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -65,6 +66,7 @@ const App = () => {
             <Route path="/contact" element={<Contacts />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/pricing" element={<Pricing />} />
           </Routes>
             <Footer />
         </Router>
