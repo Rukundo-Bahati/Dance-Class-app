@@ -50,7 +50,11 @@ const Gallery = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {images.map((src, index) => (
             <div key={index} className="relative group">
-              <img src={src} alt={`image${index + 1}`} className="rounded-md w-full h-auto" />
+              <img
+                src={src}
+                alt={`image${index + 1}`}
+                className="rounded-md w-full h-auto"
+              />
               <div
                 className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer"
                 onClick={() => openImage(src)}
@@ -71,7 +75,11 @@ const Gallery = () => {
             >
               &times;
             </button>
-            <img src={selectedImage} alt="Selected" className="max-w-full max-h-full rounded-lg" />
+            <img
+              src={selectedImage}
+              alt="Selected"
+              className="max-w-full max-h-full rounded-lg"
+            />
           </div>
         </div>
       )}
