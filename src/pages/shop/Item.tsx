@@ -7,17 +7,20 @@ import {
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import Modal from "./Modal"; // import the Modal component
+import ShopModal from "./ShopModal"; // import the ShopModal component
 
 interface Props {
   img: string;
   price: string;
   name: string;
+  description: string; // Add a description prop
 }
 
-const Item: React.FC<Props> = ({ img, price, name }) => {
+const Item: React.FC<Props> = ({ img, price, name, description }) => {
   const [showIcons, setShowIcons] = useState(false);
   const [liked, setLiked] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showShopModal, setShowShopModal] = useState(false);
 
   const handleIconClick = (action: string, e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
@@ -29,7 +32,7 @@ const Item: React.FC<Props> = ({ img, price, name }) => {
         setShowModal(true);
         break;
       case "shop":
-        // Implement shopping functionality (e.g., open modal to add item to cart)
+        setShowShopModal(true);
         break;
       default:
         break;
@@ -87,6 +90,14 @@ const Item: React.FC<Props> = ({ img, price, name }) => {
         </div>
       </div>
       {showModal && <Modal imageUrl={img} onClose={() => setShowModal(false)} />}
+      {showShopModal && (
+        <ShopModal
+          imageUrl={img}
+          name={name}
+          description={description}
+          onClose={() => setShowShopModal(false)}
+        />
+      )}
     </div>
   );
 };
