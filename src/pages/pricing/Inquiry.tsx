@@ -1,32 +1,32 @@
 const Inquiry = () => {
   return (
-    <div className="flex items-center justify-center ">
-      <form className="bg-white p-5 w-1/2">
-        <div className="flex flex-col lg:flex-row lg:space-x-4 gap-2">
-          <div className="lg:mb-0 w-full lg:w-1/2">
+    <div className="flex  justify-center p-4 bg-gray-100">
+      <form className="bg-white p-6 w-full max-w-xl shadow-lg rounded-lg">
+        <div className="flex flex-col lg:flex-row lg:space-x-4 gap-2 mb-3">
+          <div className="w-full">
             <input
               type="text"
               id="name"
-              className="bg-slate-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 "
+              className="bg-slate-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
               placeholder="Your Name"
               required
             />
           </div>
-          <div className="mb-6 lg:mb-0 w-full lg:w-1/2">
+          <div className="w-full">
             <input
               type="email"
               id="email"
-              className="bg-slate-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 "
+              className="bg-slate-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
               placeholder="Your Email"
               required
             />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row lg:space-x-4 mt-3">
-          <div className="mb-6 lg:mb-0 w-full lg:w-1/2">
+        <div className="flex flex-col lg:flex-row lg:space-x-4 gap-2 mb-3">
+          <div className="w-full">
             <select
-              id="countries"
-              className="bg-slate-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5 dark:border-gray-300 dark:text-gray-600 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              id="categories"
+              className="bg-slate-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5"
             >
               <option selected>Contemporary</option>
               <option value="1">Drill</option>
@@ -35,10 +35,10 @@ const Inquiry = () => {
               <option value="4">Traditional</option>
             </select>
           </div>
-          <div className="mb-6 lg:mb-0 w-full lg:w-1/2">
+          <div className="w-full">
             <select
-              id="countries"
-              className="bg-slate-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5 dark:border-gray-300 dark:text-gray-600 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              id="budget"
+              className="bg-slate-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5"
             >
               <option selected value="1">
                 Under $300
@@ -52,12 +52,12 @@ const Inquiry = () => {
         <textarea
           id="message"
           rows="4"
-          className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300   dark:placeholder-gray-400 resize-none mb-6 mt-4"
+          className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 resize-none mb-3"
           placeholder="Your Message"
         ></textarea>
         <button
           type="submit"
-          className="text-white bg-red-700 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-6 py-3 text-center hover:border hover:border-red-500 hover:text-slate-700 duration-500"
+          className="w-full text-white bg-red-700 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-3 text-center hover:border hover:border-red-500 hover:text-red-700 duration-500"
         >
           SEND AN INQUIRY
         </button>
