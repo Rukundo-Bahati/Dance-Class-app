@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -17,6 +20,21 @@ const Nav = () => {
 
   const handleDropdownMouseLeave = () => {
     setDropdownOpen(false);
+  };
+
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/search?query=${searchQuery}`);
+    }
   };
 
   return (
@@ -112,7 +130,21 @@ const Nav = () => {
           </ul>
         </div>
         <div className="hidden md:flex items-center space-x-4">
-          <BsSearch className="text-xl cursor-pointer hover:text-gray-400" />
+          <BsSearch
+            className="text-xl cursor-pointer hover:text-gray-400"
+            onClick={toggleSearch}
+          />
+          {searchOpen && (
+            <form onSubmit={handleSearchSubmit}>
+              <input
+                type="text"
+                className="ml-2 p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Search..."
+                value={searchQuery}
+                onChange={handleSearchChange}
+              />
+            </form>
+          )}
           <button className="px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-md hover:border hover:border-white duration-300">
             REGISTER
           </button>
@@ -141,6 +173,9 @@ const Nav = () => {
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
               <Link to="/pages">PAGES</Link>
+            </li>
+            <li className="hover:text-gray-400 cursor-pointer">
+              <Link to="/blog">BLOG</Link>
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
               <Link to="/contact">CONTACT US</Link>

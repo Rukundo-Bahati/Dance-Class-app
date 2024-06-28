@@ -1,5 +1,3 @@
-import { BsPlay } from "react-icons/bs";
-
 const Style = () => {
   return (
     <div>
@@ -28,6 +26,8 @@ const Style = () => {
             src="src/assets/d3.webp"
             alt="Dance"
             className="w-full h-auto rounded-lg shadow-lg opacity-75 my-3"
+            width="400"
+            height="300"
           />
         </div>
       </div>
@@ -37,7 +37,9 @@ const Style = () => {
           <img
             src="src/assets/d1.webp"
             alt="Dance"
-            className="w-full h-auto rounded-lg shadow-lg opacity-75 my-3 mx-3"
+            className="w-full h-auto rounded-lg shadow-lg opacity-75 my-3"
+            width="400"
+            height="300"
           />
         </div>
         <div className="flex flex-col justify-center items-center">

@@ -30,21 +30,21 @@ const Header = () => {
             <input
               type="text"
               placeholder="Your Name"
-              className="flex-grow p-2 rounded bg-indigo-950 text-white hover:border hover:border-cyan-400 "
+              className="flex-grow p-3 rounded-xl bg-indigo-950 text-white hover:border hover:border-cyan-400 "
             />
             <input
               type="email"
               placeholder="Email Address"
-              className="flex-grow p-2 rounded bg-indigo-950 text-white hover:border hover:border-cyan-400"
+              className="flex-grow p-3 rounded-xl bg-indigo-950 text-white hover:border hover:border-cyan-400"
             />
-            <select className="flex-grow p-2 rounded bg-indigo-950 text-white hover:border hover:border-cyan-400">
+            <select className="flex-grow p-3 rounded-xl bg-indigo-950 text-white hover:border hover:border-cyan-400">
               <option value="0">Select Class</option>
               <option value="1">Hip Hop</option>
               <option value="2">Afro Beat</option>
               <option value="3">Drill</option>
               <option value="4">Amapiano</option>
             </select>
-            <button className="p-2 rounded bg-indigo-950 text-white hover:bg-white hover:text-indigo-950 hover:border hover:border-indigo-950 duration-300">
+            <button className="p-3 rounded-xl bg-indigo-950 text-white hover:bg-white hover:text-indigo-950 hover:border hover:border-indigo-950 duration-300">
               Submit now
             </button>
           </form>

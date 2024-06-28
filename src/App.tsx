@@ -14,6 +14,8 @@ import {
   About,
 } from "./pages/all";
 import "./App.css"; 
+import SearchResults from "./pages/SearchResullts";
+import { DataProvider } from "./data/DataContext";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +23,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000); 
+    }, 3000); 
   }, []);
 
   return (
@@ -33,6 +35,7 @@ const App = () => {
           </span>
         </div>
       ) : (
+        <DataProvider>
         <Router>
           <Nav />
           <Routes>
@@ -45,9 +48,11 @@ const App = () => {
             <Route path="/events" element={<Events />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/search" element={<SearchResults />} />
           </Routes>
           <Footer />
         </Router>
+        </DataProvider>
       )}
     </div>
   );
