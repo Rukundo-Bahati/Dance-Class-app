@@ -1,66 +1,42 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Community from "./components/Community";
-import Services from "./components/services/Services";
-import Cards from "./components/cards/Cards";
-import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
-import Style from "./components/Style";
-import Testimonials from "./components/testimonial/Testimonials";
-import Instructors from "./components/teachers/Instructors";
-import Articles from "./components/articles/Articles";
 import Footer from "./components/Footer";
-import About from "./pages/about/About";
-import Class from "./pages/classes/Class";
-import Blog from "./pages/blog/Blog";
-import Contacts from "./pages/contact/Contact";
-import Contact from './components/Contact'
-import Shop from "./pages/shop/Shop";
-import Events from "./pages/events/Event";
-import Pricing from "./pages/pricing/Pricing";
-import Gallery from "./pages/gallery/Gallery";
+import {
+  Home,
+  Contacts,
+  Gallery,
+  Class,
+  Blog,
+  Shop,
+  Pricing,
+  Events,
+  About,
+} from "./pages/all";
+import "./App.css"; 
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a data fetching delay
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Adjust the delay as needed
-  }, [isLoading]);
+    }, 5000); 
+  }, []);
 
   return (
-    <div className="bg-slate-950">
+    <div className="bg-slate-950 min-h-screen flex flex-col">
       {isLoading ? (
-        <div className="flex items-center justify-center min-h-screen">
-          <div role="status" className="max-w-sm animate-pulse">
-            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
-            <span className="sr-only">Loading...</span>
-          </div>
+        <div className="flex items-center justify-center flex-grow">
+          <span className="text-6xl font-bold text-transparent bg-clip-text animate-gradient">
+            SPARK
+          </span>
         </div>
       ) : (
         <Router>
-            <Nav />
+          <Nav />
           <Routes>
-            <Route path="/" element={
-              <>
-                <Header />
-                <Cards />
-                <Community />
-                <Services />
-                <Style />
-                <Testimonials />
-                <Instructors />
-                <Contact />
-                <Articles />
-              </>
-            } />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/class" element={<Class />} />
             <Route path="/blog" element={<Blog />} />
@@ -70,7 +46,7 @@ const App = () => {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/gallery" element={<Gallery />} />
           </Routes>
-            <Footer />
+          <Footer />
         </Router>
       )}
     </div>

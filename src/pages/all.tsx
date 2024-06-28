@@ -1,0 +1,9 @@
+export { default as Home } from './home/Home.tsx';
+export { default as About } from './about/About.tsx';
+export { default as Class } from './classes/Class.tsx';
+export { default as Blog } from './blog/Blog.tsx';
+export { default as Contacts } from './contact/Contact.tsx';
+export { default as Events } from './events/Event.tsx';
+export { default as Gallery } from './gallery/Gallery.tsx';
+export { default as Pricing } from './pricing/Pricing.tsx';
+export { default as Shop } from './shop/Shop.tsx';

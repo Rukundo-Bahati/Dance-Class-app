@@ -9,3 +9,37 @@ body {
 
 /* Define animations for the planets */
 /* Define animations for the planets */
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+    background-color: yellow;
+  }
+  50% {
+    background-position: 100% 50%;
+    background-color: purple;
+  }
+  100% {
+    background-position: 0% 50%;
+    background-color: yellow;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-16px); /* Midpoint, adjust as desired */
+  }
+}
+
+.moving-image {
+  animation: moveUpDown 5s ease-in-out infinite; /* Adjust duration and timing function */
+}

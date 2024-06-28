@@ -9,7 +9,7 @@ const Community = () => {
           style={{ width: "400px", height: "auto" }}
         />
         <div className="text-center lg:text-left">
-          <p className="mb-2 text-pink-700 text-sm lg:text-base font-medium italic">
+          <p className="mb-2 text-blue-300 text-sm lg:text-base font-medium italic">
             Providing services since 2024
           </p>
           <h1 className="text-2xl lg:text-4xl mb-2 lg:mb-4">
@@ -27,7 +27,7 @@ const Community = () => {
             participants engage in a variety of dance styles, from ballet and
             contemporary to hip-hop and salsa.
           </p>
-          <button className="px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-3xl mt-4">
+          <button className="px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-md mt-4 hover:border hover:border-white duration-300">
             LEARN MORE
           </button>
         </div>

@@ -22,7 +22,7 @@ const Nav = () => {
   return (
     <div className="bg-gray-800 text-white border border-blue-800 fixed top-0 w-screen z-50">
       <div className="flex items-center justify-between px-6 py-4">
-        <h2 className="bg-gradient-to-r text-center from-blue-500 to-purple-500 text-transparent bg-clip-text font-extrabold m-2">
+        <h2 className="bg-gradient-to-r text-center from-blue-500 to-purple-500 text-transparent bg-clip-text font-extrabold m-2 text-4xl">
           SPARK
         </h2>
         <div className="hidden md:flex space-x-6 items-center">
@@ -113,8 +113,8 @@ const Nav = () => {
         </div>
         <div className="hidden md:flex items-center space-x-4">
           <BsSearch className="text-xl cursor-pointer hover:text-gray-400" />
-          <button className="px-4 py-2 bg-indigo-700 hover:bg-blue-700 text-white font-semibold rounded">
-            REGISTER NOW
+          <button className="px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-md hover:border hover:border-white duration-300">
+            REGISTER
           </button>
         </div>
         <div className="md:hidden">
